@@ -1,0 +1,35 @@
+ <div class="container">
+      <h1>Software Developer Application Form</h1>
+
+        {{#if msg}}
+      <h3>{{ msg }} </h3>
+      {{/if }}
+      <form method="POST" action="/form_action">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" required="" name="name" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" required="" name="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="tel" required="" name="phone" class="form-control" id="phone" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+          <label for="position">Position</label>
+          <select class="form-control" id="position" required="" name="position">
+            <option value="Front-end developer">Front-end developer</option>
+            <option value="Back-end developer">Back-end developer</option>
+            <option value="Full-stack developer">Full-stack developer</option>
+            <option value="Software enginee">Software engineer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" required="" name="message" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    color: lightblue;
+}
+
+div{
+    width: 70%;
+    margin: 2rem auto;
+    color: black;
+}
+
+form input{
+    padding:10px ;
+    width: 100%;
+}
